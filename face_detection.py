@@ -16,7 +16,7 @@ resized_img = cv2.resize(img, (int(img.shape[1]/2), int(img.shape[0]/2)))
 cv2.imshow('windows', resized_img)
 
 k = cv2.waitKey(0)
-if k == 29:         # wait for ESC key to exit
+if k == 1:         # wait for key to exit
     cv2.destroyAllWindows()
 elif k == ord('s'): # wait for 's' key to save and exit
     cv2.imwrite('face_detect1.png',img)
